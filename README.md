@@ -1,50 +1,60 @@
+# 🚀 TypeScript Social Media Application
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## 📌 Overview
+The **TypeScript Social Media Application** is a modern, feature-rich social networking platform built using TypeScript, React, and Firebase. The application allows users to connect, share posts, and engage with content in a seamless and responsive UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- 👤 **User Authentication** – Secure login and registration using Firebase Authentication.
+- 📝 **Post Creation & Management** – Users can create, edit, and delete posts.
+- ❤️ **Likes & Comments** – Engage with posts via likes and comments.
+- 🌎 **Real-time Updates** – Live data sync powered by Firebase Firestore.
+- 🎨 **Responsive UI** – Optimized for mobile and desktop users.
+- ⚡ **Performance & Scalability** – Built with TypeScript and Vite for fast development and scalability.
 
-## Expanding the ESLint configuration
+## 🏗️ Tech Stack
+- **Frontend**: React.js (with TypeScript)
+- **State Management**: React Context API
+- **Backend**: Firebase Firestore (NoSQL Database)
+- **Authentication**: Firebase Authentication
+- **Styling**: Tailwind CSS
+- **Build Tool**: Vite
+- **Linting & Formatting**: ESLint, Prettier
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## 🎯 Installation & Setup
+Follow these steps to run the project locally:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. **Clone the Repository**
+   ```sh
+   git clone https://github.com/saraswathi2015/Typescript-social-media-application.git
+   cd Typescript-social-media-application
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2.Install Dependencies
+   npm install
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+ 3.Set Up Firebase Configuration
+Create a .env file in the root directory.
+Add Firebase credentials:
+VITE_FIREBASE_API_KEY=your_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_auth_domain
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
+
+4.Start the Development Server
+npm run dev
+Open http://localhost:5173 to view it in the browser.
+
+5.Run Linter
+npm run lint
+
+
+
+
+
+
+
